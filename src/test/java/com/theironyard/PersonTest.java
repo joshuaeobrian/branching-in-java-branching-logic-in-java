@@ -1,9 +1,6 @@
 package com.theironyard;
 
-import net.doughughes.testifier.exception.CannotAccessMethodException;
-import net.doughughes.testifier.exception.CannotFindConstructorException;
-import net.doughughes.testifier.exception.CannotFindMethodException;
-import net.doughughes.testifier.exception.CannotInstantiateClassException;
+import net.doughughes.testifier.exception.*;
 import net.doughughes.testifier.test.TestifierTest;
 import net.doughughes.testifier.util.Invoker;
 import org.junit.Test;
@@ -28,7 +25,7 @@ public class PersonTest extends TestifierTest{
             /* assert */
             assertThat("Person with height=165, neck=42, waist=87.5, hips=91.5 should have body fat percentage close to 26.917076518297108.",
                     estimate, closeTo(26.917076518297108, 0.001));
-        } catch (CannotInstantiateClassException | CannotFindConstructorException | CannotFindMethodException | CannotAccessMethodException e) {
+        } catch (CannotInvokeMethodException | CannotInstantiateClassException | CannotFindConstructorException | CannotFindMethodException | CannotAccessMethodException e) {
             fail(e.getMessage());
         }
     }
@@ -45,7 +42,7 @@ public class PersonTest extends TestifierTest{
             /* assert */
             assertThat("Person with height=165, neck=42, waist=87.5, hips=91.5 should not be in recommended range.",
                     inRecommendedRange, equalTo(false));
-        } catch (CannotInstantiateClassException | CannotFindConstructorException | CannotFindMethodException | CannotAccessMethodException e) {
+        } catch (CannotInvokeMethodException | CannotInstantiateClassException | CannotFindConstructorException | CannotFindMethodException | CannotAccessMethodException e) {
             fail(e.getMessage());
         }
     }
@@ -62,7 +59,7 @@ public class PersonTest extends TestifierTest{
             /* assert */
             assertThat("Person with height=165, neck=42, waist=87.5, hips=91.5 should not be in average american range.",
                     isAverageAmerican, equalTo(false));
-        } catch (CannotInstantiateClassException | CannotFindConstructorException | CannotFindMethodException | CannotAccessMethodException e) {
+        } catch (CannotInvokeMethodException | CannotInstantiateClassException | CannotFindConstructorException | CannotFindMethodException | CannotAccessMethodException e) {
             fail(e.getMessage());
         }
     }
@@ -79,7 +76,7 @@ public class PersonTest extends TestifierTest{
             /* assert */
             assertThat("Person with height=165, neck=42, waist=87.5, hips=91.5 should not be obese.",
                     isObese, equalTo(false));
-        } catch (CannotInstantiateClassException | CannotFindConstructorException | CannotFindMethodException | CannotAccessMethodException e) {
+        } catch (CannotInvokeMethodException | CannotInstantiateClassException | CannotFindConstructorException | CannotFindMethodException | CannotAccessMethodException e) {
             fail(e.getMessage());
         }
     }
@@ -113,7 +110,7 @@ public class PersonTest extends TestifierTest{
             /* assert */
             assertThat("Person with height=183, neck=48.5, waist=94 should have body fat percentage close to 14.446129765076648.",
                     estimate, closeTo(14.446129765076648, 0.001));
-        } catch (CannotInstantiateClassException | CannotFindConstructorException | CannotFindMethodException | CannotAccessMethodException e) {
+        } catch (CannotInvokeMethodException | CannotInstantiateClassException | CannotFindConstructorException | CannotFindMethodException | CannotAccessMethodException e) {
             fail(e.getMessage());
         }
     }
@@ -130,7 +127,7 @@ public class PersonTest extends TestifierTest{
             /* assert */
             assertThat("Person with height=183, neck=48.5, waist=94 should not be in recommended range.",
                     inRecommendedRange, equalTo(false));
-        } catch (CannotInstantiateClassException | CannotFindConstructorException | CannotFindMethodException | CannotAccessMethodException e) {
+        } catch (CannotInvokeMethodException | CannotInstantiateClassException | CannotFindConstructorException | CannotFindMethodException | CannotAccessMethodException e) {
             fail(e.getMessage());
         }
     }
@@ -147,7 +144,7 @@ public class PersonTest extends TestifierTest{
             /* assert */
             assertThat("Person with height=183, neck=48.5, waist=94 should not be in average american range.",
                     isAverageAmerican, equalTo(false));
-        } catch (CannotInstantiateClassException | CannotFindConstructorException | CannotFindMethodException | CannotAccessMethodException e) {
+        } catch (CannotInvokeMethodException | CannotInstantiateClassException | CannotFindConstructorException | CannotFindMethodException | CannotAccessMethodException e) {
             fail(e.getMessage());
         }
     }
@@ -164,7 +161,7 @@ public class PersonTest extends TestifierTest{
             /* assert */
             assertThat("Person with height=183, neck=48.5, waist=94 should not be obese.",
                     isObese, equalTo(false));
-        } catch (CannotInstantiateClassException | CannotFindConstructorException | CannotFindMethodException | CannotAccessMethodException e) {
+        } catch (CannotInvokeMethodException | CannotInstantiateClassException | CannotFindConstructorException | CannotFindMethodException | CannotAccessMethodException e) {
             fail(e.getMessage());
         }
     }
@@ -199,7 +196,7 @@ public class PersonTest extends TestifierTest{
             /* assert */
             assertThat("Person with height=152.5, neck=45.5, waist=94, hips=101.5 should have body fat percentage close to 36.92979544354483.",
                     estimate, closeTo(36.92979544354483, 0.001));
-        } catch (CannotInstantiateClassException | CannotFindConstructorException | CannotFindMethodException | CannotAccessMethodException e) {
+        } catch (CannotInvokeMethodException | CannotInstantiateClassException | CannotFindConstructorException | CannotFindMethodException | CannotAccessMethodException e) {
             fail(e.getMessage());
         }
     }
@@ -216,7 +213,7 @@ public class PersonTest extends TestifierTest{
             /* assert */
             assertThat("Person with height=152.5, neck=45.5, waist=94, hips=101.5 should not be in recommended range.",
                     inRecommendedRange, equalTo(false));
-        } catch (CannotInstantiateClassException | CannotFindConstructorException | CannotFindMethodException | CannotAccessMethodException e) {
+        } catch (CannotInvokeMethodException | CannotInstantiateClassException | CannotFindConstructorException | CannotFindMethodException | CannotAccessMethodException e) {
             fail(e.getMessage());
         }
     }
@@ -233,7 +230,7 @@ public class PersonTest extends TestifierTest{
             /* assert */
             assertThat("Person with height=152.5, neck=45.5, waist=94, hips=101.5 should not be in average american range.",
                     isAverageAmerican, equalTo(false));
-        } catch (CannotInstantiateClassException | CannotFindConstructorException | CannotFindMethodException | CannotAccessMethodException e) {
+        } catch (CannotInvokeMethodException | CannotInstantiateClassException | CannotFindConstructorException | CannotFindMethodException | CannotAccessMethodException e) {
             fail(e.getMessage());
         }
     }
@@ -250,7 +247,7 @@ public class PersonTest extends TestifierTest{
             /* assert */
             assertThat("Person with height=152.5, neck=45.5, waist=94, hips=101.5 should be obese.",
                     isObese, equalTo(true));
-        } catch (CannotInstantiateClassException | CannotFindConstructorException | CannotFindMethodException | CannotAccessMethodException e) {
+        } catch (CannotInvokeMethodException | CannotInstantiateClassException | CannotFindConstructorException | CannotFindMethodException | CannotAccessMethodException e) {
             fail(e.getMessage());
         }
     }
@@ -283,7 +280,7 @@ public class PersonTest extends TestifierTest{
             /* assert */
             assertThat("Person with height=171.5, neck=56, waist=117 should have body fat percentage close to 27.27381638574883.",
                     estimate, closeTo(27.27381638574883, 0.001));
-        } catch (CannotInstantiateClassException | CannotFindConstructorException | CannotFindMethodException | CannotAccessMethodException e) {
+        } catch (CannotInvokeMethodException | CannotInstantiateClassException | CannotFindConstructorException | CannotFindMethodException | CannotAccessMethodException e) {
             fail(e.getMessage());
         }
     }
@@ -300,7 +297,7 @@ public class PersonTest extends TestifierTest{
             /* assert */
             assertThat("Person with height=171.5, neck=56, waist=117 should not be in recommended range.",
                     inRecommendedRange, equalTo(false));
-        } catch (CannotInstantiateClassException | CannotFindConstructorException | CannotFindMethodException | CannotAccessMethodException e) {
+        } catch (CannotInvokeMethodException | CannotInstantiateClassException | CannotFindConstructorException | CannotFindMethodException | CannotAccessMethodException e) {
             fail(e.getMessage());
         }
     }
@@ -317,7 +314,7 @@ public class PersonTest extends TestifierTest{
             /* assert */
             assertThat("Person with height=171.5, neck=56, waist=117 should not be in average american range.",
                     isAverageAmerican, equalTo(false));
-        } catch (CannotInstantiateClassException | CannotFindConstructorException | CannotFindMethodException | CannotAccessMethodException e) {
+        } catch (CannotInvokeMethodException | CannotInstantiateClassException | CannotFindConstructorException | CannotFindMethodException | CannotAccessMethodException e) {
             fail(e.getMessage());
         }
     }
@@ -334,7 +331,7 @@ public class PersonTest extends TestifierTest{
             /* assert */
             assertThat("Person with height=171.5, neck=56, waist=117 should be obese.",
                     isObese, equalTo(true));
-        } catch (CannotInstantiateClassException | CannotFindConstructorException | CannotFindMethodException | CannotAccessMethodException e) {
+        } catch (CannotInvokeMethodException | CannotInstantiateClassException | CannotFindConstructorException | CannotFindMethodException | CannotAccessMethodException e) {
             fail(e.getMessage());
         }
     }
@@ -367,7 +364,7 @@ public class PersonTest extends TestifierTest{
             /* assert */
             assertThat("Person with height=181.5, neck=45.5, waist=96.5 should have body fat percentage close to 18.848205343988184.",
                     estimate, closeTo(18.848205343988184, 0.001));
-        } catch (CannotInstantiateClassException | CannotFindConstructorException | CannotFindMethodException | CannotAccessMethodException e) {
+        } catch (CannotInvokeMethodException | CannotInstantiateClassException | CannotFindConstructorException | CannotFindMethodException | CannotAccessMethodException e) {
             fail(e.getMessage());
         }
     }
@@ -384,7 +381,7 @@ public class PersonTest extends TestifierTest{
             /* assert */
             assertThat("Person with height=181.5, neck=45.5, waist=96.5 should not be in recommended range.",
                     inRecommendedRange, equalTo(false));
-        } catch (CannotInstantiateClassException | CannotFindConstructorException | CannotFindMethodException | CannotAccessMethodException e) {
+        } catch (CannotInvokeMethodException | CannotInstantiateClassException | CannotFindConstructorException | CannotFindMethodException | CannotAccessMethodException e) {
             fail(e.getMessage());
         }
     }
@@ -401,7 +398,7 @@ public class PersonTest extends TestifierTest{
             /* assert */
             assertThat("Person with height=181.5, neck=45.5, waist=96.5 should be in average american range.",
                     isAverageAmerican, equalTo(true));
-        } catch (CannotInstantiateClassException | CannotFindConstructorException | CannotFindMethodException | CannotAccessMethodException e) {
+        } catch (CannotInvokeMethodException | CannotInstantiateClassException | CannotFindConstructorException | CannotFindMethodException | CannotAccessMethodException e) {
             fail(e.getMessage());
         }
     }
@@ -418,7 +415,7 @@ public class PersonTest extends TestifierTest{
             /* assert */
             assertThat("Person with height=181.5, neck=45.5, waist=96.5 should not be obese.",
                     isObese, equalTo(false));
-        } catch (CannotInstantiateClassException | CannotFindConstructorException | CannotFindMethodException | CannotAccessMethodException e) {
+        } catch (CannotInvokeMethodException | CannotInstantiateClassException | CannotFindConstructorException | CannotFindMethodException | CannotAccessMethodException e) {
             fail(e.getMessage());
         }
     }
@@ -451,7 +448,7 @@ public class PersonTest extends TestifierTest{
             /* assert */
             assertThat("Person with height=166.5, neck=39.5 waist=81.5, hips=89 should have body fat percentage close to 23.415608448971795.",
                     estimate, closeTo(23.415608448971795, 0.001));
-        } catch (CannotInstantiateClassException | CannotFindConstructorException | CannotFindMethodException | CannotAccessMethodException e) {
+        } catch (CannotInvokeMethodException | CannotInstantiateClassException | CannotFindConstructorException | CannotFindMethodException | CannotAccessMethodException e) {
             fail(e.getMessage());
         }
     }
@@ -469,7 +466,7 @@ public class PersonTest extends TestifierTest{
             /* assert */
             assertThat("Person with height=166.5, neck=39.5 waist=81.5, hips=89 should be in recommended range.",
                     inRecommendedRange, equalTo(true));
-        } catch (CannotInstantiateClassException | CannotFindConstructorException | CannotFindMethodException | CannotAccessMethodException e) {
+        } catch (CannotInvokeMethodException | CannotInstantiateClassException | CannotFindConstructorException | CannotFindMethodException | CannotAccessMethodException e) {
             fail(e.getMessage());
         }
     }
@@ -486,7 +483,7 @@ public class PersonTest extends TestifierTest{
             /* assert */
             assertThat("Person with height=166.5, neck=39.5 waist=81.5, hips=89 should be in average american range.",
                     isAverageAmerican, equalTo(true));
-        } catch (CannotInstantiateClassException | CannotFindConstructorException | CannotFindMethodException | CannotAccessMethodException e) {
+        } catch (CannotInvokeMethodException | CannotInstantiateClassException | CannotFindConstructorException | CannotFindMethodException | CannotAccessMethodException e) {
             fail(e.getMessage());
         }
     }
@@ -503,7 +500,7 @@ public class PersonTest extends TestifierTest{
             /* assert */
             assertThat("Person with height=166.5, neck=39.5 waist=81.5, hips=89 should not be obese.",
                     isObese, equalTo(false));
-        } catch (CannotInstantiateClassException | CannotFindConstructorException | CannotFindMethodException | CannotAccessMethodException e) {
+        } catch (CannotInvokeMethodException | CannotInstantiateClassException | CannotFindConstructorException | CannotFindMethodException | CannotAccessMethodException e) {
             fail(e.getMessage());
         }
     }
