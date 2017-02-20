@@ -97,7 +97,7 @@ public class Person {
      * - takes no arguments
      * - returns a boolean value
      * <p>
-     * This method returns true if the person's weight is within the recommended
+     * This method returns true if the person's body fat percentage is within the recommended
      * range.
      * <p>
      * For men, the recommended range is 8 to 14 percent, inclusive.
@@ -150,10 +150,11 @@ public class Person {
             variable will hold the default description of a Person. It should
             read:
 
-            Bob is a male with estimated body fat of 14.639547773378297%.
+            Bob is a male with estimated body fat of 15%.
 
             Be sure to replace the name, gender and body fat percentages with
-            their real values. Otherwise, the string should be exactly as shown
+            their real values. The body fat percentage is rounded to the next
+            closest integer. Otherwise, the string should be exactly as shown
             above.
 
             Here are some example descriptions:
@@ -175,7 +176,7 @@ public class Person {
 
         /*
             Next create a conditional statement to add additional details to the
-            person's description.
+            person's description. This will be a series of if-else-if statements. 
          */
         // todo: check if the user is in the recommended range and also in the average range
 
@@ -213,6 +214,7 @@ public class Person {
                 If the user is obese then append to their description the text
                 "This is considered obese."
              */
+            // todo: add considered obese description
 
 
         // todo: return the full description
