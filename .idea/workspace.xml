@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="06631425-1168-4a1d-a671-40fd55283080" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/theironyard/Person.java" afterPath="$PROJECT_DIR$/src/main/java/com/theironyard/Person.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -26,8 +25,18 @@
       <file leaf-file-name="Person.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/theironyard/Person.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="116">
-              <caret line="219" column="31" lean-forward="true" selection-start-line="219" selection-start-column="31" selection-end-line="219" selection-end-column="31" />
+            <state relative-caret-position="3600">
+              <caret line="240" column="4" lean-forward="false" selection-start-line="240" selection-start-column="4" selection-end-line="240" selection-end-column="4" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PersonTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/theironyard/PersonTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-707">
+              <caret line="423" column="16" lean-forward="false" selection-start-line="423" selection-start-column="16" selection-end-line="423" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -754,17 +763,11 @@
       <workItem from="1488860107484" duration="6041000" />
       <workItem from="1488935200700" duration="392000" />
       <workItem from="1488937301689" duration="9000" />
-      <workItem from="1489002230339" duration="2788000" />
+      <workItem from="1489002230339" duration="3513000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Run_all_tests_(All_in_branching-in-java-branching-logic-in-java) - 2017.03.08 at 15h 02m 18s.xml">
-      <configuration name="Run all tests (All in branching-in-java-branching-logic-in-java)" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Run_all_tests_(All_in_branching-in-java-branching-logic-in-java) - 2017.03.08 at 15h 03m 30s.xml">
-      <configuration name="Run all tests (All in branching-in-java-branching-logic-in-java)" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="Run_all_tests_(All_in_branching-in-java-branching-logic-in-java) - 2017.03.08 at 15h 04m 42s.xml">
       <configuration name="Run all tests (All in branching-in-java-branching-logic-in-java)" configurationId="JUnit" />
     </history-entry>
@@ -789,9 +792,15 @@
     <history-entry file="Run_all_tests_(All_in_branching-in-java-branching-logic-in-java) - 2017.03.08 at 15h 26m 10s.xml">
       <configuration name="Run all tests (All in branching-in-java-branching-logic-in-java)" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="Run_all_tests_(All_in_branching-in-java-branching-logic-in-java) - 2017.03.08 at 15h 33m 07s.xml">
+      <configuration name="Run all tests (All in branching-in-java-branching-logic-in-java)" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Run_all_tests_(All_in_branching-in-java-branching-logic-in-java) - 2017.03.08 at 15h 41m 28s.xml">
+      <configuration name="Run all tests (All in branching-in-java-branching-logic-in-java)" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22455000" />
+    <option name="totallyTimeSpent" value="23180000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
@@ -806,10 +815,10 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.45102042" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.45102042" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32959184" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25030527" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -899,16 +908,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/theironyard/PersonTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="427">
-          <caret line="435" column="8" lean-forward="false" selection-start-line="435" selection-start-column="8" selection-end-line="435" selection-end-column="8" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_112.jdk/Contents/Home/src.zip!/java/lang/String.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="242">
@@ -916,10 +915,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/theironyard/PersonTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-707">
+          <caret line="423" column="16" lean-forward="false" selection-start-line="423" selection-start-column="16" selection-end-line="423" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/theironyard/Person.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="116">
-          <caret line="219" column="31" lean-forward="true" selection-start-line="219" selection-start-column="31" selection-end-line="219" selection-end-column="31" />
+        <state relative-caret-position="3600">
+          <caret line="240" column="4" lean-forward="false" selection-start-line="240" selection-start-column="4" selection-end-line="240" selection-end-column="4" />
           <folding />
         </state>
       </provider>

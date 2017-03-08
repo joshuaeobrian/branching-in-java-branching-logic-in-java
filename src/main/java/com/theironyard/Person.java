@@ -219,29 +219,26 @@ public class Person {
 
 		if(inRecommendedRange()){
 			description+=" This is in the recommended range and average range for an american.";
+		}//This works
+		else if(isAverageAmerican()){
+			description += " This is in the average range for an american.";
 		}
 
-	    // todo: check if the person is in the average range for an american
 
-            /*
-                If the user is in the average range for an american then append
-                to their description the text "This is in the average range for
-                an american."
-             */
-//
-	    if (isAverageAmerican() && !gender.equals("female")){
-		    description += " This is in the average range for an american.";
-	    }
-//
+
+
+//      This Works
+//	    if (isAverageAmerican() && !gender.equals("female")){
+//		    description += " This is in the average range for an american.";
+//	    }
+//      This Works
 //	    if (isAverageAmerican() && description.contains(" This is in the recommended range and average range for an american.")){
 //		    description += " This is in the average range for an american.";
 //	    }
 
-	    // todo: add the average american range description
 
-		// todo: check if the person is obese
 	    if(isObese()){
-		    // todo: add considered obese description
+	
 		    description += " This is considered obese.";
 	    }
                                                                 /*
