@@ -1,5 +1,7 @@
 package com.theironyard;
 
+
+
 /**
  * In this exercise you will be creating a class that models a person. The
  * person class contains methods to calculate the person's estimated body fat
@@ -22,8 +24,16 @@ public class Person {
      */
 
     // todo: create two private properties named "name" and "gender". Both of these hold Strings.
+	private String name;
+	private String gender;
 
     // todo: create properties named "height", "neck", "waist", and "hips". All of these hold double values that represent measurements in centimeters.
+
+
+	private double height;
+	private double neck;
+	private double waist;
+	private double hips;
 
     /**
      * Create a constructor that accepts values for name, height, neck, and
@@ -32,6 +42,13 @@ public class Person {
      * to "male".
      */
     // todo: create four-argument constructor for males
+	public Person(String name, double height,double neck, double waist){
+		this.name = name;
+		this.gender = "male";
+		this.height = height;
+		this.neck = neck;
+		this.waist = waist;
+	}
 
 
     /**
@@ -41,6 +58,14 @@ public class Person {
      * to "female".
      */
     // todo: create five-argument constructor for females
+	public Person(String name, double height,double neck, double waist,double hips){
+		this.name = name;
+		this.gender = "female";
+		this.height = height;
+		this.neck = neck;
+		this.waist = waist;
+		this.hips = hips;
+	}
 
 
     /**
@@ -88,6 +113,15 @@ public class Person {
      * <code>495 / (1.29579 - 0.35004 * (Math.log10(87.5 + 91.5 - 42)) + 0.22100 * (Math.log10(165))) - 450</code>;
      */
     // todo: create bodyFatEstimate() method
+	public double bodyFatEstimate(){
+		if(this.gender.equals("male")){
+			return 495 / (1.0324 - 0.19077 * (Math.log10(waist - neck)) + 0.15456 * (Math.log10(height))) - 450;
+		}else if(this.gender.equals("female")) {
+			return 495 / (1.29579 - 0.35004 * (Math.log10(waist + hips - neck)) + 0.22100 * (Math.log10(height))) - 450;
+		}else{
+			return 0;
+		}
+	}
 
 
     /**
@@ -105,6 +139,15 @@ public class Person {
      * For women, the recommended range is 20 to 25 percent, inclusive.
      */
     // todo: create inRecommendedRange() method
+	public boolean inRecommendedRange(){
+		if(this.gender.equals("male") && bodyFatEstimate() >= 8 && bodyFatEstimate() <= 14){
+			return true;
+		}else if(this.gender.equals("female") && bodyFatEstimate() >= 20 && bodyFatEstimate() <= 25) {
+			return true;
+		}else{
+			return false;
+		}
+	}
 
 
     /**
@@ -122,6 +165,15 @@ public class Person {
      * For women, the range is 22 to 25 percent, inclusive.
      */
     // todo: create isAverageAmerican() method
+	public boolean isAverageAmerican(){
+		if(this.gender.equals("male") && this.bodyFatEstimate() >= 15 && this.bodyFatEstimate() <= 19 ){
+			return true;
+		}else if(this.gender.equals("female") && this.bodyFatEstimate() >= 22 && this.bodyFatEstimate() <= 25 ){
+			return true;
+		}else{
+			return false;
+		}
+	}
 
 
     /**
@@ -138,12 +190,22 @@ public class Person {
      * For women, 30% and higher is considered obese.
      */
     // todo: create isObese() method
-
+	public boolean isObese() {
+		if (this.gender.equals("male") && bodyFatEstimate() >= 25) {
+			return true;
+		} else if (this.gender.equals("female") && bodyFatEstimate() >= 30) {
+			return true;
+		} else {
+			return false;
+		}
+	}
 
     /**
      * Create a toString() method that will return a string description of the
      * person. Follow the instructions below to complete the method.
      */
+    public String toString() {
+
 
         /*
             We will start by creating a variable named "description". This
@@ -159,64 +221,76 @@ public class Person {
 
             Here are some example descriptions:
 
-            Bob is a male with estimated body fat of 15%.
+              Bob is a male with estimated body fat of 15%.
             Wanda is a female with estimated body fat of 27%.
             Zelda is a female with estimated body fat of 37%. This is obese.
-            Sven is a male with estimated body fat of 19%. This is in the average range for an american.
+             Sven is a male with estimated body fat of 19%. This is in the average range for an american.
             Alvin is a male with estimated body fat of 28%. This is obese.
-            Kat is a female with estimated body fat of 23%. This is in the recommended range and average range for an american.
+              Kat is a female with estimated body fat of 23%. This is in the recommended range and average range for an american.
 
             Note: to round the double value returned from the bodyFatEstimate()
             method you will need to use the Math.round() function. For example:
 
             Math.round(bodyFatEstimate())
          */
-        // todo: create default description.
-
+	    // todo: create default description.
+			String description = this.name + " is a "+ this.gender + " with estimated body fat of " + Math.round(bodyFatEstimate()) + "%.";
 
         /*
             Next create a conditional statement to add additional details to the
             person's description. This will be a series of if-else-if statements. 
          */
-        // todo: check if the user is in the recommended range and also in the average range
+	    // todo: check if the user is in the recommended range and also in the average range
 
             /*
                 If the user is in the recommended and average ranges then append
                 to their description the text "This is in the recommended range
                 and average range for an american."
              */
-            // todo: add the recommended and average range description
 
 
-        // todo: check if the person is in the recommended range
+
+	    // todo: add the recommended and average range description
+
+	    // todo: check if the person is in the recommended range
 
             /*
                 If the user is in the recommended range then append to their
                 description the text "This is within the recommended range."
              */
-            // todo: add the recommended range description
+	    // todo: add the recommended range description
+		if(inRecommendedRange()){
+			description+=" This is in the recommended range and average range for an american.";
+		}
 
-
-        // todo: check if the person is in the average range for an american
+	    // todo: check if the person is in the average range for an american
 
             /*
                 If the user is in the average range for an american then append
                 to their description the text "This is in the average range for
                 an american."
              */
-
-            // todo: add the average american range description
-
-
-        // todo: check if the person is obese
-
-            /*
-                If the user is obese then append to their description the text
-                "This is considered obese."
-             */
-            // todo: add considered obese description
+	    if (isAverageAmerican() && !description.contains(" This is in the recommended range and average range for an american.")){
+		    description += " This is in the average range for an american.";
+	    }
 
 
-        // todo: return the full description
+	    // todo: add the average american range description
+
+		// todo: check if the person is obese
+	    if(isObese()){
+		    // todo: add considered obese description
+		    description += " This is considered obese.";
+	    }
+                                                                /*
+          If the user is obese then append to their description the text
+           "This is considered obese."
+                                                                    */
+
+
+
+	    // todo: return the full description
+		return description;
+    }
 
 }
