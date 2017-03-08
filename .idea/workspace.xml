@@ -26,8 +26,8 @@
       <file leaf-file-name="Person.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/theironyard/Person.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="173">
-              <caret line="259" column="15" lean-forward="true" selection-start-line="259" selection-start-column="15" selection-end-line="259" selection-end-column="15" />
+            <state relative-caret-position="116">
+              <caret line="219" column="31" lean-forward="true" selection-start-line="219" selection-start-column="31" selection-end-line="219" selection-end-column="31" />
               <folding />
             </state>
           </provider>
@@ -754,20 +754,11 @@
       <workItem from="1488860107484" duration="6041000" />
       <workItem from="1488935200700" duration="392000" />
       <workItem from="1488937301689" duration="9000" />
-      <workItem from="1489002230339" duration="1798000" />
+      <workItem from="1489002230339" duration="2788000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Run_all_tests_(All_in_branching-in-java-branching-logic-in-java) - 2017.03.07 at 10h 24m 17s.xml">
-      <configuration name="Run all tests (All in branching-in-java-branching-logic-in-java)" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Run_all_tests_(All_in_branching-in-java-branching-logic-in-java) - 2017.03.08 at 14h 48m 35s.xml">
-      <configuration name="Run all tests (All in branching-in-java-branching-logic-in-java)" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Run_all_tests_(All_in_branching-in-java-branching-logic-in-java) - 2017.03.08 at 15h 00m 03s.xml">
-      <configuration name="Run all tests (All in branching-in-java-branching-logic-in-java)" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="Run_all_tests_(All_in_branching-in-java-branching-logic-in-java) - 2017.03.08 at 15h 02m 18s.xml">
       <configuration name="Run all tests (All in branching-in-java-branching-logic-in-java)" configurationId="JUnit" />
     </history-entry>
@@ -789,9 +780,18 @@
     <history-entry file="Run_all_tests_(All_in_branching-in-java-branching-logic-in-java) - 2017.03.08 at 15h 12m 23s.xml">
       <configuration name="Run all tests (All in branching-in-java-branching-logic-in-java)" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="Run_all_tests_(All_in_branching-in-java-branching-logic-in-java) - 2017.03.08 at 15h 19m 27s.xml">
+      <configuration name="Run all tests (All in branching-in-java-branching-logic-in-java)" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Run_all_tests_(All_in_branching-in-java-branching-logic-in-java) - 2017.03.08 at 15h 19m 55s.xml">
+      <configuration name="Run all tests (All in branching-in-java-branching-logic-in-java)" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Run_all_tests_(All_in_branching-in-java-branching-logic-in-java) - 2017.03.08 at 15h 26m 10s.xml">
+      <configuration name="Run all tests (All in branching-in-java-branching-logic-in-java)" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21465000" />
+    <option name="totallyTimeSpent" value="22455000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
@@ -806,7 +806,7 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.47959185" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.45102042" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -918,8 +918,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/theironyard/Person.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="173">
-          <caret line="259" column="15" lean-forward="true" selection-start-line="259" selection-start-column="15" selection-end-line="259" selection-end-column="15" />
+        <state relative-caret-position="116">
+          <caret line="219" column="31" lean-forward="true" selection-start-line="219" selection-start-column="31" selection-end-line="219" selection-end-column="31" />
           <folding />
         </state>
       </provider>

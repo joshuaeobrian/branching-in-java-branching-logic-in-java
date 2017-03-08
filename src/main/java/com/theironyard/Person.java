@@ -212,53 +212,11 @@ public class Person {
             variable will hold the default description of a Person. It should
             read:
 
-            Bob is a male with estimated body fat of 15%.
-
-            Be sure to replace the name, gender and body fat percentages with
-            their real values. The body fat percentage is rounded to the next
-            closest integer. Otherwise, the string should be exactly as shown
-            above.
-
-            Here are some example descriptions:
-
-              Bob is a male with estimated body fat of 15%.
-            Wanda is a female with estimated body fat of 27%.
-            Zelda is a female with estimated body fat of 37%. This is obese.
-             Sven is a male with estimated body fat of 19%. This is in the average range for an american.
-            Alvin is a male with estimated body fat of 28%. This is obese.
-              Kat is a female with estimated body fat of 23%. This is in the recommended range and average range for an american.
-
-            Note: to round the double value returned from the bodyFatEstimate()
-            method you will need to use the Math.round() function. For example:
-
-            Math.round(bodyFatEstimate())
          */
 	    // todo: create default description.
 			String description = this.name + " is a "+ this.gender + " with estimated body fat of " + Math.round(bodyFatEstimate()) + "%.";
 
-        /*
-            Next create a conditional statement to add additional details to the
-            person's description. This will be a series of if-else-if statements. 
-         */
-	    // todo: check if the user is in the recommended range and also in the average range
 
-            /*
-                If the user is in the recommended and average ranges then append
-                to their description the text "This is in the recommended range
-                and average range for an american."
-             */
-
-
-
-	    // todo: add the recommended and average range description
-
-	    // todo: check if the person is in the recommended range
-
-            /*
-                If the user is in the recommended range then append to their
-                description the text "This is within the recommended range."
-             */
-	    // todo: add the recommended range description
 		if(inRecommendedRange()){
 			description+=" This is in the recommended range and average range for an american.";
 		}
@@ -270,10 +228,14 @@ public class Person {
                 to their description the text "This is in the average range for
                 an american."
              */
-	    if (isAverageAmerican() && !description.contains(" This is in the recommended range and average range for an american.")){
+//
+	    if (isAverageAmerican() && !gender.equals("female")){
 		    description += " This is in the average range for an american.";
 	    }
-
+//
+//	    if (isAverageAmerican() && description.contains(" This is in the recommended range and average range for an american.")){
+//		    description += " This is in the average range for an american.";
+//	    }
 
 	    // todo: add the average american range description
 
