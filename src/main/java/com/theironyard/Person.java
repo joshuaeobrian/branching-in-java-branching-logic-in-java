@@ -215,9 +215,10 @@ public class Person {
          */
 	    // todo: create default description.
 			String description = this.name + " is a "+ this.gender + " with estimated body fat of " + Math.round(bodyFatEstimate()) + "%.";
-
-
-		if(inRecommendedRange()){
+		if(inRecommendedRange() && isAverageAmerican()){
+			description+=" This is in the recommended range and average range for an american.";
+		}
+		else if(inRecommendedRange()){
 			description+=" This is in the recommended range and average range for an american.";
 		}//This works
 		else if(isAverageAmerican()){
@@ -238,7 +239,7 @@ public class Person {
 
 
 	    if(isObese()){
-	
+
 		    description += " This is considered obese.";
 	    }
                                                                 /*
